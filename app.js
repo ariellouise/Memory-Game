@@ -89,6 +89,7 @@ function checkMatch() {
   //console.log("check for match!");
   if (cardsChosen[0] == cardsChosen[1]) {
     alert("You found a match!");
+    cards[cardsChosenIds[0]].setAttribute("src", "images/white.png");
   }
 }
 
@@ -96,6 +97,7 @@ function flipCard() {
   const cardId = this.getAttribute("data-id");
   //this --allows us to interact with whatever is clicked
   cardsChosen.push(cardArray[cardId].name);
+  cardsChosenIds.push(cardId);
   this.setAttribute("src", cardArray[cardId].img);
   if (cardsChosen.length === 2) {
     setTimeout(checkMatch, 500);
