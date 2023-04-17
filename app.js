@@ -90,6 +90,8 @@ function checkMatch() {
   if (cardsChosen[0] == cardsChosen[1]) {
     alert("You found a match!");
     cards[cardsChosenIds[0]].setAttribute("src", "images/white.png");
+    cards[cardsChosenIds[1]].setAttribute("src", "images/white.png");
+    cards[cardsChosenIds[0]].removeEventListener("click", flipCard);
   }
 }
 
