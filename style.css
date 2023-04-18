@@ -1,6 +1,26 @@
 #grid {
-  width: 400px;
+  width: 800px;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 360px;
+  padding-top: 100px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #086375;
+  font-size: large;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+}
+
+#score {
+  padding: 60px;
 }

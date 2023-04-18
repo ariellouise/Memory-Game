@@ -105,7 +105,7 @@ function checkMatch() {
     cards[optionTwoId].setAttribute("src", "images/background.jpg");
     alert("Sorry! Try again!");
   }
-
+  resultDisplay.textContent = cardsWon.length;
   cardsChosen = [];
   cardsChosenIds = [];
 
